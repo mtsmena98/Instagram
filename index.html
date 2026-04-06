@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      width: 300px;
+      text-align: center;
+    }
+    input, textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+    }
+    button {
+      background: #0095f6;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Fale comigo</h2>
+
+  <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="email" name="email" placeholder="Seu email" required>
+    <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+</div>
+
+</body>
+</html>
